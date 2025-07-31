@@ -114,13 +114,32 @@
         <iframe width="560" height="315" src="https://www.youtube.com/embed/5BsHi7abuNk?si=k8gPcIv_njo_j9ef" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         <div class="video-overlay"></div>
     </div>
+    <div class="right-section">
+        <div class="decorative-elements"></div>
+        <div class="age-rating">UA | 13+</div>
+        
+        <div class="sony-logo">Sony LIV Originals</div>
+        
+        <div class="title">GYMKHANA</div>
+        <div class="subtitle">Step into the ring! The fight is just beginning</div>
+        
+        <div class="streaming-info">
+            <div>Streaming From</div>
+            <div class="date">14th October</div>
+        </div>
+        
+        <div class="character-poses">
+            <div class="character-pose"></div>
+            <div class="character-pose"></div>
+        </div>
+    </div>
 </div>
 
 
 {% endblock midtrail %}
 
 {% block midcontent %}
-<div class="section-title">Popular in Mystery</div>
+<div class="section-title">English Movies</div>
     
 <div class="drama-slider-container">
     <button class="drama-nav-button prev" onclick="slideLeft()">‹</button>
@@ -128,7 +147,7 @@
     
     <div class="drama-slider-wrapper" id="dramaSliderWrapper">
         <div class="drama-slide">
-            <img src="{% static 'images/Ls1.avif' %}" alt="Bade Achhe Lagte Hain">
+            <img src="{% static 'images/Lmsl1.avif' %}" alt="Bade Achhe Lagte Hain">
             <div class="drama-slide-overlay">
                 <div class="drama-slide-title">BADE ACHHE LAGTE HAIN</div>
                 <div class="drama-slide-subtitle">NEW SEASON</div>
@@ -203,3 +222,33 @@
 
 
 {% endblock midcontent %}
+
+{% block lowermid %}
+<div class="left-section">
+    <div class="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/5BsHi7abuNk?si=k8gPcIv_njo_j9ef" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <div class="video-overlay"></div>
+    </div>
+    <div class="right-section">
+        <div class="decorative-elements"></div>
+        <div class="age-rating">UA | 13+</div>
+        
+        <div class="sony-logo">Sony LIV Originals</div>
+        
+        <div class="title">GYMKHANA</div>
+        <div class="subtitle">Step into the ring! The fight is just beginning</div>
+        
+        <div class="streaming-info">
+            <div>Streaming From</div>
+            <div class="date">14th October</div>
+        </div>
+        
+        <div class="character-poses">
+            <div class="character-pose"></div>
+            <div class="character-pose"></div>
+        </div>
+    </div>
+</div>
+
+
+{% endblock lowermid %}
