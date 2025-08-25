@@ -25,7 +25,6 @@ urlpatterns = [
     path('Movies/',views.Movies,name='Movies'),
     path('Sports/',views.Sports,name='Sports'),
     path('Premium/',views.Premium,name='Premium'),
-    path('Originals/',views.Originals,name='Originals'),
     path('Signup/',views.Signup,name='Signup'),
 
 ]

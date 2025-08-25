@@ -13,8 +13,7 @@ def Sports(req):
     return render(req,'Sports.html')
 def Premium(req):
     return render(req,'Premium.html')
-def Originals(req):
-    return render(req,'Originals.html')
+
 
     
 def Signup(req):
