@@ -14,8 +14,6 @@ def Sports(req):
 def Premium(req):
     return render(req,'Premium.html')
 
-
-    
 def Signup(req):
     if req.method=="POST":
         n=req.POST.get('name')
@@ -53,5 +51,5 @@ def Login(req):
         else:
            emr="Email does not exist"
            return render(req,'Signup.html',{'emr':emr})
-    else:
-        return render(req,'Signup.html')  
+    
+    return render(req,'Signup.html')  
