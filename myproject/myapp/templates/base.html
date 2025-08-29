@@ -224,10 +224,14 @@
       
       const prevBtn = document.querySelector('.drama-nav-button.prev');
       const nextBtn = document.querySelector('.drama-nav-button.next');
+      const prevvBtn = document.querySelector('.drama-nav-button.prevv');
+      const nexttBtn = document.querySelector('.drama-nav-button.nextt');
      
       
       prevBtn.disabled = currentPosition === 0;
       nextBtn.disabled = currentPosition >= maxPosition;
+      prevvBtn.disabled = currentPosition === 0;
+      nexttBtn.disabled = currentPosition >= maxPosition;
   }
   
   function slideLeft() {
@@ -302,6 +306,8 @@
   });
 </script>
 
+
+<!-- Login -->
 <script>
     const cardFlip = document.getElementById('cardFlip');
     const loginBtn = document.getElementById('loginBtn');
