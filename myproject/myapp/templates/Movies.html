@@ -1,5 +1,8 @@
 {% extends "base.html" %}
 {% load static %}
+{% block css %}
+<link rel="stylesheet" href="{% static 'CSS/movies.css' %}">
+{% endblock css %}
 {% block hero %}
 
 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -139,87 +142,125 @@
 {% endblock midtrail %}
 
 {% block midcontent %}
-<div class="section-title">English Movies</div>
+<!-- <div class="section-title">English Movies</div>
     
-<div class="drama-slider-container">
-    <button class="drama-nav-button prevv" onclick="slideLeft()">‹</button>
-    <button class="drama-nav-button nextt" onclick="slideRight()">›</button>
+<div class="movie-slider-container">
+    <button class="movie-nav-button prev-btn" onclick="moveLeft()">‹</button>
+    <button class="movie-nav-button next-btn" onclick="moveRight()">›</button>
     
-    <div class="drama-slider-wrapper" id="dramaSliderWrapper">
-        <div class="drama-slide">
+    <div class="movie-slider-wrapper" id="movieSliderWrapper">
+        <div class="movie-slide">
             <img src="{% static 'images/Lmsl1.avif' %}" alt="Bade Achhe Lagte Hain">
-           
         </div>
-        
-        <div class="drama-slide">
+        <div class="movie-slide">
             <img src="{% static 'images/Lmsl2.avif' %}" alt="Pukaaar">
-           
         </div>
-        
-        <div class="drama-slide">
+        <div class="movie-slide">
             <img src="{% static 'images/Lmsl3.avif' %}" alt="Kaya">
-           
         </div>
-        
-        <div class="drama-slide">
-            <img src="{% static 'images/Lmsl4.avif' %} "alt="Baatein Ye Pata Hai">
-            
+        <div class="movie-slide">
+            <img src="{% static 'images/Lmsl4.avif' %}" alt="Baatein Ye Pata Hai">
         </div>
-        
-        <div class="drama-slide">
+        <div class="movie-slide">
             <img src="{% static 'images/Lmsl5.avif' %}" alt="Barsatein">
-         
         </div>
-        
-        <div class="drama-slide">
+        <div class="movie-slide">
             <img src="{% static 'images/Lmsl6.avif' %}" alt="Katha">
-            
         </div>
-        
-        <div class="drama-slide">
+        <div class="movie-slide">
             <img src="{% static 'images/Lmsl7.avif' %}" alt="Show 7">
-           
         </div>
-        
-        <div class="drama-slide">
+        <div class="movie-slide">
             <img src="{% static 'images/Lmsl8.avif' %}" alt="Pashminna">
-            
         </div>
-        
-        <div class="drama-slide">
+        <div class="movie-slide">
             <img src="{% static 'images/Lmsl9.avif' %}" alt="Show 9">
-            
         </div>
-        <div class="drama-slide">
-            <img src="{% static 'images/Lmsl10.avif' %}" alt="Show 9">
-            
+        <div class="movie-slide">
+            <img src="{% static 'images/Lmsl10.avif' %}" alt="Show 10">
         </div>
-        <div class="drama-slide">
-            <img src="{% static 'images/Lmsl11.avif' %}" alt="Show 9">
-            
+        <div class="movie-slide">
+            <img src="{% static 'images/Lmsl11.avif' %}" alt="Show 11">
         </div>
-        <div class="drama-slide">
-            <img src="{% static 'images/Lmsl12.avif' %}" alt="Show 9">
-            
+        <div class="movie-slide">
+            <img src="{% static 'images/Lmsl12.avif' %}" alt="Show 12">
         </div>
-        <div class="drama-slide">
-            <img src="{% static 'images/Lmsl13.avif' %}" alt="Show 9">
-            
+        <div class="movie-slide">
+            <img src="{% static 'images/Lmsl13.avif' %}" alt="Show 13">
         </div>
-        <div class="drama-slide">
-            <img src="{% static 'images/Lmsl14.avif' %}" alt="Show 9">
-            
+        <div class="movie-slide">
+            <img src="{% static 'images/Lmsl14.avif' %}" alt="Show 14">
         </div>
-        <div class="drama-slide">
-            <img src="{% static 'images/Lmsl15.avif' %}" alt="Show 9">
-            
+        <div class="movie-slide">
+            <img src="{% static 'images/Lmsl15.avif' %}" alt="Show 15">
         </div>
-        <div class="drama-slide">
-            <img src="{% static 'images/Lmsl16.avif' %}" alt="Show 9">
-            
+        <div class="movie-slide">
+            <img src="{% static 'images/Lmsl16.avif' %}" alt="Show 16">
+        </div>
+    </div>
+</div> -->
+
+
+<div class="container">
+    <div class="section-title">English Movies</div>
+    
+    <div class="movie-slider-container">
+        <button class="movie-nav-button prev-btn" onclick="moveLeft()">‹</button>
+        <button class="movie-nav-button next-btn" onclick="moveRight()">›</button>
+        
+        <div class="movie-slider-wrapper" id="movieSliderWrapper">
+            <div class="movie-slide">
+                <img src="https://images.unsplash.com/photo-1489599135254-8b8d7e3f1b5e?w=200&h=280&fit=crop" alt="Gymkhana">
+            </div>
+            <div class="movie-slide">
+                <img src="https://images.unsplash.com/photo-1440404653325-ab127d49abc1?w=200&h=280&fit=crop" alt="Shappu">
+            </div>
+            <div class="movie-slide">
+                <img src="https://images.unsplash.com/photo-1478720568477-152d9b164e26?w=200&h=280&fit=crop" alt="Rekhachithram">
+            </div>
+            <div class="movie-slide">
+                <img src="https://images.unsplash.com/photo-1509347528160-9329f9dd50a5?w=200&h=280&fit=crop" alt="Marco">
+            </div>
+            <div class="movie-slide">
+                <img src="https://images.unsplash.com/photo-1485846234645-a62644f84728?w=200&h=280&fit=crop" alt="Agent">
+            </div>
+            <div class="movie-slide">
+                <img src="https://images.unsplash.com/photo-1594909122845-11baa439b7bf?w=200&h=280&fit=crop" alt="Bougainvillea">
+            </div>
+            <div class="movie-slide">
+                <img src="https://images.unsplash.com/photo-1518676590629-3dcbd9c5a5c9?w=200&h=280&fit=crop" alt="2018">
+            </div>
+            <div class="movie-slide">
+                <img src="https://images.unsplash.com/photo-1489599135254-8b8d7e3f1b5e?w=200&h=280&fit=crop" alt="Movie 8">
+            </div>
+            <div class="movie-slide">
+                <img src="https://images.unsplash.com/photo-1440404653325-ab127d49abc1?w=200&h=280&fit=crop" alt="Movie 9">
+            </div>
+            <div class="movie-slide">
+                <img src="https://images.unsplash.com/photo-1478720568477-152d9b164e26?w=200&h=280&fit=crop" alt="Movie 10">
+            </div>
+            <div class="movie-slide">
+                <img src="https://images.unsplash.com/photo-1509347528160-9329f9dd50a5?w=200&h=280&fit=crop" alt="Movie 11">
+            </div>
+            <div class="movie-slide">
+                <img src="https://images.unsplash.com/photo-1485846234645-a62644f84728?w=200&h=280&fit=crop" alt="Movie 12">
+            </div>
+            <div class="movie-slide">
+                <img src="https://images.unsplash.com/photo-1594909122845-11baa439b7bf?w=200&h=280&fit=crop" alt="Movie 13">
+            </div>
+            <div class="movie-slide">
+                <img src="https://images.unsplash.com/photo-1518676590629-3dcbd9c5a5c9?w=200&h=280&fit=crop" alt="Movie 14">
+            </div>
+            <div class="movie-slide">
+                <img src="https://images.unsplash.com/photo-1489599135254-8b8d7e3f1b5e?w=200&h=280&fit=crop" alt="Movie 15">
+            </div>
+            <div class="movie-slide">
+                <img src="https://images.unsplash.com/photo-1440404653325-ab127d49abc1?w=200&h=280&fit=crop" alt="Movie 16">
+            </div>
         </div>
     </div>
 </div>
+
 
 
 {% endblock midcontent %}
