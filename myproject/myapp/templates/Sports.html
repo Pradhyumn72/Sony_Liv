@@ -40,7 +40,7 @@
 {% endblock hero%}
 
 {% block content %}
-<div class="section-title">Trending In Sports</div>
+<div class="section-title" style="color: black;">Trending In Sports</div>
     
 <div class="drama-slider-container">
     <button class="drama-nav-button prev" onclick="slideLeft()">‹</button>
@@ -108,91 +108,68 @@
 
 
 {% block midcontent %}
-<div class="section-title">Popular in Drama</div>
+<div class="section-title" style="color: black;">Popular in Drama</div>
     
-<div class="drama-slider-container">
-    <button class="drama-nav-button prev" onclick="slideLeft()">‹</button>
-    <button class="drama-nav-button next" onclick="slideRight()">›</button>
-    
-    <div class="drama-slider-wrapper" id="dramaSliderWrapper">
-        <div class="drama-slide">
-            <img src="{% static 'images/Lsl1.avif' %}" alt="Bade Achhe Lagte Hain">
-            
+<div class="movie-slider-container">
+    <button class="movie-nav-button prev-btn" onclick="movieSlideLeft()">‹</button>
+    <button class="movie-nav-button next-btn" onclick="movieSlideRight()">›</button>
+
+    <div class="movie-slider-wrapper" id="movieSliderWrapper">
+        <div class="movie-slide">
+            <img src="{% static 'images/Lsl1.avif' %}" alt="Movie 1">
         </div>
-        
-        <div class="drama-slide">
-            <img src="{% static 'images/Lsl2.avif' %}" alt="Pukaaar">
-          
+
+        <div class="movie-slide">
+            <img src="{% static 'images/Lsl2.avif' %}" alt="Movie 2">
         </div>
-        
-        <div class="drama-slide">
-            <img src="{% static 'images/Lsl3.avif' %}" alt="Kaya">
-            
+
+        <div class="movie-slide">
+            <img src="{% static 'images/Lsl3.avif' %}" alt="Movie 3">
         </div>
-        
-        <div class="drama-slide">
-            <img src="{% static 'images/Lsl4.avif' %} "alt="Baatein Ye Pata Hai">
-           
+
+        <div class="movie-slide">
+            <img src="{% static 'images/Lsl4.avif' %} "alt="Movie 4">
         </div>
-        
-        <div class="drama-slide">
-            <img src="{% static 'images/Lsl5.avif' %}" alt="Barsatein">
-           
+
+        <div class="movie-slide">
+            <img src="{% static 'images/Lsl5.avif' %}" alt="Movie 5">
         </div>
-        
-        <div class="drama-slide">
-            <img src="{% static 'images/Lsl6.avif' %}" alt="Katha">
-           
+
+        <div class="movie-slide">
+            <img src="{% static 'images/Lsl6.avif' %}" alt="Movie 6">
         </div>
-        
-        <div class="drama-slide">
-            <img src="{% static 'images/Lsl7.avif' %}" alt="Show 7">
-           
+
+        <div class="movie-slide">
+            <img src="{% static 'images/Lsl7.avif' %}" alt="Movie 7">
         </div>
-        
-        <div class="drama-slide">
-            <img src="{% static 'images/Lsl8.avif' %}" alt="Pashminna">
-           
+
+        <div class="movie-slide">
+            <img src="{% static 'images/Lsl8.avif' %}" alt="Movie 8">
         </div>
-        
-        <div class="drama-slide">
-            <img src="{% static 'images/Lsl9.avif' %}" alt="Show 9">
+
+        <div class="movie-slide">
+            <img src="{% static 'images/Lsl9.avif' %}" alt="Movie 9">
         </div>
-        <div class="drama-slide">
-            <img src="{% static 'images/Lsl10.avif' %}" alt="Show 9">
+        <div class="movie-slide">
+            <img src="{% static 'images/Lsl10.avif' %}" alt="Movie 10">
         </div>
-        <div class="drama-slide">
-            <img src="{% static 'images/Lsl11.avif' %}" alt="Show 9">
+        <div class="movie-slide">
+            <img src="{% static 'images/Lsl11.avif' %}" alt="Movie 11">
         </div>
-        <div class="drama-slide">
-            <img src="{% static 'images/Lsl12.avif' %}" alt="Show 9">
+        <div class="movie-slide">
+            <img src="{% static 'images/Lsl12.avif' %}" alt="Movie 12">
         </div>
-        <div class="drama-slide">
-            <img src="{% static 'images/Lsl13.avif' %}" alt="Show 9">
+        <div class="movie-slide">
+            <img src="{% static 'images/Lsl13.avif' %}" alt="Movie 12">
         </div>
-        <div class="drama-slide">
-            <img src="{% static 'images/Lsl14.avif' %}" alt="Show 9">
+        <div class="movie-slide">
+            <img src="{% static 'images/Lsl14.avif' %}" alt="Movie 12">
         </div>
-        <div class="drama-slide">
-            <img src="{% static 'images/Lsl5.avif' %}" alt="Show 9">
+        <div class="movie-slide">
+            <img src="{% static 'images/Lsl15.avif' %}" alt="Movie 12">
         </div>
-        <div class="drama-slide">
-            <img src="{% static 'images/Lsl6.avif' %}" alt="Show 9">
-        </div>
-        <div class="drama-slide">
-            <img src="{% static 'images/Lsl7.avif' %}" alt="Show 9">
-        </div>
-        <div class="drama-slide">
-            <img src="{% static 'images/Lsl8.avif' %}" alt="Show 9">
-        </div>
-        <div class="drama-slide">
-            <img src="{% static 'images/Lsl19.avif' %}" alt="Show 9">
-        </div>
-        <div class="drama-slide">
-            <img src="{% static 'images/Lsl20.avif' %}" alt="Show 9">
-        </div>
-        <div class="drama-slide">
-            <img src="{% static 'images/Lsl21.avif' %}" alt="Show 9">
+        <div class="movie-slide">
+            <img src="{% static 'images/Lsl16.avif' %}" alt="Movie 12">
         </div>
     </div>
 </div>
