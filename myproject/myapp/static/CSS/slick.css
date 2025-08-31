@@ -513,3 +513,78 @@
         height: 180px;
     }
 }
+
+/* ===== SERIAL SLIDER ===== */
+.serial-slider-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+  .serial-slider-wrapper {
+    display: flex;
+    transition: transform 0.3s ease;
+    gap: 15px;
+  }
+  .serial-slide {
+    flex: 0 0 auto;
+    width: 200px;
+    height: 280px;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  .serial-slide:hover {
+    transform: scale(1.05);
+  }
+  .serial-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .serial-nav-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.7);
+    border: none;
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s ease;
+    z-index: 10;
+  }
+  .serial-nav-button:hover {
+    background: rgba(0, 0, 0, 0.9);
+  }
+  .serial-nav-button.prev {
+    left: 10px;
+  }
+  .serial-nav-button.next {
+    right: 10px;
+  }
+  .serial-nav-button:disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+  }
+  
+  /* Responsive for serial slider */
+  @media (max-width: 768px) {
+    .serial-slide {
+      width: 150px;
+      height: 210px;
+    }
+    .serial-nav-button {
+      width: 40px;
+      height: 40px;
+      font-size: 16px;
+    }
+  }
+  

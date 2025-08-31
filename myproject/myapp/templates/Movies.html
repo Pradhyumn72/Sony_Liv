@@ -201,66 +201,36 @@
 </div> -->
 
 
-<div class="container">
-    <div class="section-title">English Movies</div>
+<div class="serial-slider-container">
+    <button class="serial-nav-button prev" onclick="slideLeftSerial()">‹</button>
+    <button class="serial-nav-button next" onclick="slideRightSerial()">›</button>
     
-    <div class="movie-slider-container">
-        <button class="movie-nav-button prev-btn" onclick="moveLeft()">‹</button>
-        <button class="movie-nav-button next-btn" onclick="moveRight()">›</button>
+    <div class="serial-slider-wrapper" id="serialSliderWrapper">
+        <div class="serial-slide">
+            <img src="{% static 'images/Mvssl11.avif' %}" alt="Serial 1">
+        </div>
         
-        <div class="movie-slider-wrapper" id="movieSliderWrapper">
-            <div class="movie-slide">
-                <img src="https://images.unsplash.com/photo-1489599135254-8b8d7e3f1b5e?w=200&h=280&fit=crop" alt="Gymkhana">
-            </div>
-            <div class="movie-slide">
-                <img src="https://images.unsplash.com/photo-1440404653325-ab127d49abc1?w=200&h=280&fit=crop" alt="Shappu">
-            </div>
-            <div class="movie-slide">
-                <img src="https://images.unsplash.com/photo-1478720568477-152d9b164e26?w=200&h=280&fit=crop" alt="Rekhachithram">
-            </div>
-            <div class="movie-slide">
-                <img src="https://images.unsplash.com/photo-1509347528160-9329f9dd50a5?w=200&h=280&fit=crop" alt="Marco">
-            </div>
-            <div class="movie-slide">
-                <img src="https://images.unsplash.com/photo-1485846234645-a62644f84728?w=200&h=280&fit=crop" alt="Agent">
-            </div>
-            <div class="movie-slide">
-                <img src="https://images.unsplash.com/photo-1594909122845-11baa439b7bf?w=200&h=280&fit=crop" alt="Bougainvillea">
-            </div>
-            <div class="movie-slide">
-                <img src="https://images.unsplash.com/photo-1518676590629-3dcbd9c5a5c9?w=200&h=280&fit=crop" alt="2018">
-            </div>
-            <div class="movie-slide">
-                <img src="https://images.unsplash.com/photo-1489599135254-8b8d7e3f1b5e?w=200&h=280&fit=crop" alt="Movie 8">
-            </div>
-            <div class="movie-slide">
-                <img src="https://images.unsplash.com/photo-1440404653325-ab127d49abc1?w=200&h=280&fit=crop" alt="Movie 9">
-            </div>
-            <div class="movie-slide">
-                <img src="https://images.unsplash.com/photo-1478720568477-152d9b164e26?w=200&h=280&fit=crop" alt="Movie 10">
-            </div>
-            <div class="movie-slide">
-                <img src="https://images.unsplash.com/photo-1509347528160-9329f9dd50a5?w=200&h=280&fit=crop" alt="Movie 11">
-            </div>
-            <div class="movie-slide">
-                <img src="https://images.unsplash.com/photo-1485846234645-a62644f84728?w=200&h=280&fit=crop" alt="Movie 12">
-            </div>
-            <div class="movie-slide">
-                <img src="https://images.unsplash.com/photo-1594909122845-11baa439b7bf?w=200&h=280&fit=crop" alt="Movie 13">
-            </div>
-            <div class="movie-slide">
-                <img src="https://images.unsplash.com/photo-1518676590629-3dcbd9c5a5c9?w=200&h=280&fit=crop" alt="Movie 14">
-            </div>
-            <div class="movie-slide">
-                <img src="https://images.unsplash.com/photo-1489599135254-8b8d7e3f1b5e?w=200&h=280&fit=crop" alt="Movie 15">
-            </div>
-            <div class="movie-slide">
-                <img src="https://images.unsplash.com/photo-1440404653325-ab127d49abc1?w=200&h=280&fit=crop" alt="Movie 16">
-            </div>
+        <div class="serial-slide">
+            <img src="{% static 'images/Mvssl12.avif' %}" alt="Serial 2">
+        </div>
+        
+        <div class="serial-slide">
+            <img src="{% static 'images/Mvssl13.avif' %}" alt="Serial 3">
+        </div>
+        
+        <div class="serial-slide">
+            <img src="{% static 'images/Mvssl14.avif' %}" alt="Serial 4">
+        </div>
+        
+        <div class="serial-slide">
+            <img src="{% static 'images/Mvssl15.avif' %}" alt="Serial 5">
+        </div>
+        
+        <div class="serial-slide">
+            <img src="{% static 'images/Mvssl16.avif' %}" alt="Serial 6">
         </div>
     </div>
 </div>
-
 
 
 {% endblock midcontent %}
