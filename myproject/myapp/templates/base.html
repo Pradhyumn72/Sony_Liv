@@ -480,5 +480,93 @@
 </script>
 
 
+<script>
+let movieCurrentPosition = 0;
+const movieSlideWidth = 215;
+const movieVisibleSlides = Math.floor(window.innerWidth / movieSlideWidth);
+const movieTotalSlides = document.querySelectorAll('.movie-slide').length;
+const movieMaxPosition = Math.max(0, movieTotalSlides - movieVisibleSlides);
+
+function updateMovieSlider() {
+    const movieSliderWrapper = document.getElementById('movieSliderWrapper');
+    movieSliderWrapper.style.transform = `translateX(-${movieCurrentPosition * movieSlideWidth}px)`;
+
+    const prevBtn = document.querySelector('.movie-nav-button.prev-btn');
+    const nextBtn = document.querySelector('.movie-nav-button.next-btn');
+
+    prevBtn.disabled = movieCurrentPosition === 0;
+    nextBtn.disabled = movieCurrentPosition >= movieMaxPosition;
+}
+
+function movieSlideLeft() {
+    if (movieCurrentPosition > 0) {
+        movieCurrentPosition--;
+        updateMovieSlider();
+    }
+}
+
+function movieSlideRight() {
+    if (movieCurrentPosition < movieMaxPosition) {
+        movieCurrentPosition++;
+        updateMovieSlider();
+    }
+}
+
+updateMovieSlider();
+
+window.addEventListener('resize', () => {
+    const newMovieVisibleSlides = Math.floor(window.innerWidth / movieSlideWidth);
+    const newMovieMaxPosition = Math.max(0, movieTotalSlides - newMovieVisibleSlides);
+
+    if (movieCurrentPosition > newMovieMaxPosition) {
+        movieCurrentPosition = newMovieMaxPosition;
+    }
+
+    updateMovieSlider();
+});
+
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'ArrowLeft') {
+        movieSlideLeft();
+    } else if (e.key === 'ArrowRight') {
+        movieSlideRight();
+    }
+});
+
+let movieStartX = 0;
+let isMovieDragging = false;
+
+const movieSliderWrapper = document.getElementById('movieSliderWrapper');
+
+movieSliderWrapper.addEventListener('touchstart', (e) => {
+    movieStartX = e.touches[0].clientX;
+    isMovieDragging = true;
+});
+
+movieSliderWrapper.addEventListener('touchmove', (e) => {
+    if (!isMovieDragging) return;
+    e.preventDefault();
+});
+
+movieSliderWrapper.addEventListener('touchend', (e) => {
+    if (!isMovieDragging) return;
+
+    const movieEndX = e.changedTouches[0].clientX;
+    const movieDiff = movieStartX - movieEndX;
+
+    if (Math.abs(movieDiff) > 50) {
+        if (movieDiff > 0) {
+            movieSlideRight();
+        } else {
+            movieSlideLeft();
+        }
+    }
+
+    isMovieDragging = false;
+});
+</script>
+
+
+
   </body>
 </html>
