@@ -40,7 +40,7 @@
 {% endblock hero%}
 
 {% block content %}
-<div class="section-title">Popular in Drama</div>
+<div class="section-title" style="color: black;">Popular in Drama</div>
     
 <div class="drama-slider-container">
     <button class="drama-nav-button prev" onclick="slideLeft()">‹</button>
@@ -123,8 +123,38 @@
 {% endblock content %}
 
 
+
+
+{% block midtrail %}
+<div class="left-section">
+    <div class="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/IYlBDFy-BJE?si=M0zeYdSzG74cdu0D" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <div class="video-overlay"></div>
+    </div>
+    <div class="right-section">
+        <div class="decorative-elements"></div>
+        <div class="age-rating">A | 18+</div>
+        
+        <div class="sony-logo">Sony LIV Originals</div>
+        
+        <div class="title">College Romance</div>
+        <div class="subtitle">Friendship = College and College = unforgettable memories!</div>
+        
+        <div class="streaming-info">
+            <div>Streaming From</div>
+            <div class="date">15th January</div>
+        </div>
+        
+        <div class="character-poses">
+            <div class="character-pose"></div>
+            <div class="character-pose"></div>
+        </div>
+    </div>
+</div>
+
+
 {% block midcontent %}
-<div class="section-title" style="color: black;">Sports around the globe</div>
+<div class="section-title" style="color: black;">Liv Classics</div>
     
 <div class="movie-slider-container">
     <button class="movie-nav-button prev-btn" onclick="movieSlideLeft()">‹</button>
@@ -132,59 +162,90 @@
 
     <div class="movie-slider-wrapper" id="movieSliderWrapper">
         <div class="movie-slide">
-            <img src="{% static 'images/Lsl1.avif' %}" alt="Movie 1">
+            <img src="{% static 'images/Ssl1.avif' %}" alt="Movie 1">
+            
         </div>
 
         <div class="movie-slide">
-            <img src="{% static 'images/Lsl2.avif' %}" alt="Movie 2">
+            <img src="{% static 'images/Ssl2.avif' %}" alt="Movie 2">
         </div>
 
         <div class="movie-slide">
-            <img src="{% static 'images/Lsl3.avif' %}" alt="Movie 3">
+            <img src="{% static 'images/Ssl3.avif' %}" alt="Movie 3">
         </div>
 
         <div class="movie-slide">
-            <img src="{% static 'images/Lsl4.avif' %} "alt="Movie 4">
+            <img src="{% static 'images/Ssl4.avif' %} "alt="Movie 4">
         </div>
 
         <div class="movie-slide">
-            <img src="{% static 'images/Lsl5.avif' %}" alt="Movie 5">
+            <img src="{% static 'images/Ssl5.avif' %}" alt="Movie 5">
         </div>
 
         <div class="movie-slide">
-            <img src="{% static 'images/Lsl6.avif' %}" alt="Movie 6">
+            <img src="{% static 'images/Ssl6.avif' %}" alt="Movie 6">
         </div>
 
         <div class="movie-slide">
-            <img src="{% static 'images/Lsl7.avif' %}" alt="Movie 7">
+            <img src="{% static 'images/Ssl7.avif' %}" alt="Movie 7">
         </div>
 
         <div class="movie-slide">
-            <img src="{% static 'images/Lsl8.avif' %}" alt="Movie 8">
+            <img src="{% static 'images/Ssl8.avif' %}" alt="Movie 8">
         </div>
 
         <div class="movie-slide">
-            <img src="{% static 'images/Lsl9.avif' %}" alt="Movie 9">
+            <img src="{% static 'images/Ssl9.avif' %}" alt="Movie 9">
         </div>
     
         <div class="movie-slide">
-            <img src="{% static 'images/Lsl11.avif' %}" alt="Movie 11">
+            <img src="{% static 'images/Ssl11.avif' %}" alt="Movie 11">
         </div>
         <div class="movie-slide">
-            <img src="{% static 'images/Lsl12.avif' %}" alt="Movie 12">
+            <img src="{% static 'images/Ssl12.avif' %}" alt="Movie 12">
         </div>
     
         <div class="movie-slide">
-            <img src="{% static 'images/Lsl14.avif' %}" alt="Movie 12">
+            <img src="{% static 'images/Ssl14.avif' %}" alt="Movie 12">
         </div>
         <div class="movie-slide">
-            <img src="{% static 'images/Lsl15.avif' %}" alt="Movie 12">
+            <img src="{% static 'images/Ssl15.avif' %}" alt="Movie 12">
         </div>
         <div class="movie-slide">
-            <img src="{% static 'images/Lsl16.avif' %}" alt="Movie 12">
+            <img src="{% static 'images/Ssl16.avif' %}" alt="Movie 12">
         </div>
     </div>
 </div>
 
 
 {% endblock midcontent %}
+
+{% block lowermid %}
+<div class="left-section">
+    <div class="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/5i2VB5hXyoM?si=QTTXyFMQ4dghaZJN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <div class="video-overlay"></div>
+    </div>
+    <div class="right-section">
+        <div class="decorative-elements"></div>
+        <div class="age-rating">UA | 13+</div>
+        
+        <div class="sony-logo">Sony LIV Originals</div>
+        
+        <div class="title">Gullak</div>
+        <div class="subtitle">Lekar zindagi ki khanak <br>Aa rahee hai naye kisson ki Gullak!</div>
+        
+        <div class="streaming-info">
+            <div>Streaming From</div>
+            <div class="date">29th September</div>
+        </div>
+        
+        <div class="character-poses">
+            <div class="character-pose"></div>
+            <div class="character-pose"></div>
+        </div>
+    </div>
+</div>
+
+
+{% endblock lowermid %}
